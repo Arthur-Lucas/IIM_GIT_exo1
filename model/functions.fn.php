@@ -82,6 +82,7 @@ SUMMARY
 
 				return true;
 			}else{
+				$error = 'Mauvais identifiants';
 				return false;
 			}
 		}else{
