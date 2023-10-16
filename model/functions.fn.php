@@ -30,12 +30,13 @@ SUMMARY
 		$email -> 			field value : email
 		$password -> 		field value : password
 	*/
-	function userRegistration(PDO $db, $username, $email, $password){
+	function userRegistration(PDO $db, $username, $email, $password, $picture){
 		$sql = "INSERT INTO users
 				  SET
 				  username = :username,
 				  email = :email,
-				  password = :password";
+				  password = :password,
+				  picture = :picture";
 
 
 		$req = $db->prepare($sql);
@@ -43,6 +44,7 @@ SUMMARY
 			':username' => $username,
 			':email' => $email,
 			':password' => $password,
+			':picture' => $picture
 		));
 		
 
