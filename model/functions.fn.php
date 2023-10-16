@@ -31,6 +31,7 @@ SUMMARY
 		$password -> 		field value : password
 	*/
 	function userRegistration(PDO $db, $username, $email, $password){
+		echo "<script>console.log('Debug Objects: " . $username . "' );</script>";
 		$sql = "INSERT INTO users
 				  SET
 				  username = :username,
