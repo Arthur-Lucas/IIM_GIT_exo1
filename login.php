@@ -3,7 +3,7 @@
 /******************************** 
 	 DATABASE & FUNCTIONS 
 ********************************/
-require('config/cofing-sample.php');
+require('config/config-sample.php');
 require('model/functions.fn.php');
 
 
